@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./assets/styles/style.css">
-   <!-- <link rel="stylesheet" href="./assets/styles/style2.css"> -->
    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -13,7 +12,7 @@
 </head>
 <body>
     <header>
-
+        <i class='menubtn bx bx-menu' onclick="addOpen()"></i>
         <nav>
             <ul>
                 <li><i class='bx bx-home-alt'></i><a href="#">Home</a></li>
@@ -21,6 +20,7 @@
                 <li><i class='bx bx-phone'></i><a href="./assets/pages/contact.html">Contact</a></li>
                 <li><i class='bx bxs-calendar' ></i><a href="./assets/pages/schudele.html">Schedule</a></li>
                 <li><i class='bx bx-bulb'></i><a href="./assets/pages/tips&befenits.html">Benefits & Tips</a></li>
+                <li><i class='bx bx-dice-5'></i><a href="./assets/pages/raffle.html">Raffle</a></li>
             </ul>
         </nav>
 
@@ -37,7 +37,7 @@
         </div>
         
         <div class="img__home">
-            <img class="gymBrosImg" src="../assets/images/together.jpg" alt="gymBrosImg">
+            <img class="gymBrosImg" src="./assets/images/together.jpg" alt="gymBrosImg">
         </div>
 
     </main>
@@ -49,9 +49,24 @@
             You can also participate in the monthly raffles.
         </p>
 
-        <img src="../assets/images/dumbbells.jpg" alt="">
+        <img src="./assets/images/dumbbells.jpg" alt="gymImg">
         
     </div>
-        
+
+    <div class="despemenu" >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./assets/pages/aboutUs.html">About Us</a></li>
+            <li><a href="./assets/pages/contact.html">Contact</a></li>
+            <li><a href="./assets/pages/schudele.html">Schedule</a></li>
+            <li><a href="./assets/pages/tips&befenits.html">Benefits & Tips</a></li>
+            <li><a href="./assets/pages/raffle.html">Raffle</a></li>
+        </ul>
+    </div>
+<script type="text/javascript">
+    const btn = document.querySelector('.despemenu')
+    
+    const addOpen = () => btn.classList.toggle('open');
+</script>     
 </body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+   <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Olympus Gym | Raffle</title>
+</head>
+<body>
+
+    <header>
+        <i class='menubtn bx bx-menu' onclick="addOpen()"></i>
+        <nav>
+            <ul>
+                <li><i class='bx bx-home-alt'></i><a href="../../index.html">Home</a></li>
+                <li><i class='bx bx-info-circle' ></i><a href="./aboutUs.html">About Us</a></li>
+                <li><i class='bx bx-phone'></i><a href="./contact.html">Contact</a></li>
+                <li><i class='bx bxs-calendar' ></i><a href="./schudele.html">Schedule</a></li>
+                <li><i class='bx bx-bulb'></i><a href="./tips&befenits.html">Benefits & Tips</a></li>
+                <li><i class='bx bx-dice-5'></i><a href="#">Raffle</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="logo"><img src="../images/logo.png" alt="logoImg"></a>
+
+    </header>
+
+    <main class="about__main">
+        <h1>Raffle</h1>
+        <h4>Every month in this section you can participate in a raffle.</h4>
+    </main>
+
+
+    <div class="rafflecontainer">
+
+        <div class="image__container">
+            <img src="../images/gym-1.jpg" alt="gymImg">
+            <img src="../images/boy.png" alt="gymImg">
+        </div>
+
+        <form action="./show_data.html" method="get" autocomplete="off">
+
+                <h3>PARTICIPATE IN OUR RAFFLE FOR A MONTH FO PERSONALIZED TRAINING</h3>
+
+                <fieldset class="column">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </fieldset>
+
+                <fieldset class="column"> 
+                <label for="gender">Choose Your Gender:</label>
+                    <select name="gender" id="gender">
+                        <option>--Select--</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Otro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="column">
+                <label for="contry">Contry:</label>
+                    <select name="contry" id="contry">
+                        <option>--Select--</option>
+                        <option>Colombia</option>
+                        <option>Argentina</option>
+                        <option>Uruguay</option>
+                        <option>Chile</option>
+                        <option>Perú</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+
+                    <label for="pay-Options">Payments Options:</label><br>
+
+                    <input type="radio" name="option" id="cash" value="cash">
+                    <label for="cash">Cash</label><br>
+                    
+                    <input type="radio" name="option" id="creditCard" value="cd">
+                    <label for="creditCard">Credit Card</label><br>
+
+                    <input type="radio" name="option" id="debitCard" value="dc">
+                    <label for="debitCard">Debit Card</label><br>
+                    
+                </fieldset>
+                
+                <fieldset class="column">
+                    <label for="services">Services</label>
+                    <textarea name="service" id="services"></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="checkbox" name="terms&conds" id="terandcon">
+                    <label for="terandcon">I accept terms and conditions</label>
+                </fieldset>    
+                
+                <input class="sendButton" type="submit" value="Send">
+
+        </form>
+
+    </div>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1839486611193!2d-73.98773664859802!3d40.757978742636205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1ses!2sco!4v1678987391319!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <div class="despemenu" >
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./schudele.html">Schedule</a></li>
+            <li><a href="./tips&befenits.html">Benefits & Tips</a></li>
+            <li><a href="#">Raffle</a></li>
+        </ul>
+    </div>
+<script type="text/javascript">
+        const btn = document.querySelector('.despemenu')
+        const addOpen = () => btn.classList.toggle('open');
+</script>
+</body>
+</html>
+
+
+ <!-- @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }  -->
